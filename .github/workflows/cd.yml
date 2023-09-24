@@ -39,6 +39,8 @@ jobs:
             - run: ls dist
             - uses: actions/checkout@v4
 
+            #สามารถนำ folder ไป deploy เองได้ เช่น หา action ssh ไปยัง server ได้อัตโนมัติ
+
             - name: publish veu to gtihub pages
               uses: SerhiiKa/VuePagesAction@1.0.4
               with:
